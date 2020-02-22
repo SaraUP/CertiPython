@@ -1,0 +1,12 @@
+- Quantas palavras, caracteres e linhas tem o arquivo nomes.txt?: Comando "wc" ==> simplemente wc nombres.txt o wc -w nombres.txt --> cuenta la cantidad de palabras; wc -l nombres.txt --> cuenta la cantidad de lineas; wc -m nombres.txt --> cuenta la cantidad de caracteres
+
+- Use o grep para pegar apenas os nomes que começam com A. Dica: padrão “^A” letra A no início de uma linha. Padrão “A” letra A em qualquer posição da linha: Comando "^A" ejNombres.txt --> todos los nombres que comiencen con la letra A. En mi caso el nombre mostrado es el de Amelia
+
+- Use o grep para pegar apenas os nomes que NÃO começam com A. Coloque o resultado em nomes_nao_a.txt. Dica: opção –v (inverte o sentido do grep): Comando "grep -v "^A" ejercicioNombres.txt > nombresSinA.txt" --> Muestra los nombres que no comiencen por A y los guarde en el nuevo archivo
+
+- Use o comando diff para comparar nomes.txt com nomes_nao_a.txt: Comando "diff ejercicioNombres.txt nombresSInA.txt" --> Muestra las diferencias entre los dos archivos.
+
+- O arquivo /share/pesquisa.txt contém resultados brutos dos votos de uma eleição com vários candidatos. Copie-o para sua área. Use uma combinação de sort, uniq e wc para dizer quantos candidatos diferentes foram votados: Comando "sort pesquisa.txt | uniq -c" --> Muestra ordenados los nombres de candidatos contando cuantos votos tiene cada uno de ellos.
+
+- Elabora uma linha de comando para imprimir na tela o nome de cada candidato e seu número de votos em ordem descrescente de número de votos: Comando "sort pesquisa.txt | uniq -c > candidatos.txt" --> Muestra un sort con los votos de los candidatos
+Comando "sort -n candidatos.txt" --> Ordena de menor a mayor. 

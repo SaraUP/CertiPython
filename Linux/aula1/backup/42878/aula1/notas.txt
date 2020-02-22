@@ -1,0 +1,7 @@
+- cp
+- rm
+- mv
+- mkdir
+- rmdir
+- touch
+- ls

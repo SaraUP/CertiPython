@@ -1,0 +1,22 @@
+- Proceso que el usuario esta ejecutando: "ps -f usuario" en mi caso usuario es "sara"
+
+- Proceso que todos los usuarios estan ejecutando: "ps -ef"
+
+- PID de Firefox: "firefox &"
+
+- Matar el Firefox con kill: "kill numero" --> el numero es el PID obtenido del firefox con el comando anterior (en mi caso el numero es: 73019)
+
+-Abra el gedit y coloque en el background Control+Z bg <enter>: "sara@ubuntu:~$ gedit
+^Z
+[1]+  Stopped                 gedit
+sara@ubuntu:~$ bg
+[1]+ gedit &"
+
+- Traer gedit de nuevo a foreground con fg: "fg
+gedit"
+
+- Use top para determinar que procesos estan consumiendo mas recursos: "top ctrl m" (ordena por usuarios)
+
+- Use man top para entender todo lo listado: "k" es el comando que sirve para matar
+
+- Mate algun proceso NO esencial con top: vamos a matar el gedit --> primero ponemos el comando "top", luego buscamos el proceso que queremos matar y anotamos su PID (en este caso el gedit es: 86610). Ponemos la letra "k" y arriba de todos los procesos anotamos en PID del proceso a matar, ponemos <enter> dos veces y vemos que en la lista el proceso matado ya no existe.

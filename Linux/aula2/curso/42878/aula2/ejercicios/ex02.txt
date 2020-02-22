@@ -1,0 +1,5 @@
+- ls -all --> Muestra todo los archivos que existen (incluso aquellos ocultos)
+
+- ls --recursive --> Muestra los archivos que existen en un directorio y los archivos dentro de los archivos dentro del directorio (muestra los archivos recursivamente)
+
+- ls -w --> Muestra los archivos dentro de un directorio por columnas, por lo que combinando con otras letras se puede escojer que se quiere ver: cantidad, solo nombre, fecha, etc...

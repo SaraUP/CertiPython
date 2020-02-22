@@ -1,0 +1,5 @@
+- cp -R --> Realiza una copia recursiva de todos los archivos y directorios del directorio troncal
+
+-mkdir -m --> Sirve para crear un directorio dandole permisos "chmod"
+
+- rm -v --> Muestra los nombres de todos los archivos eliminados

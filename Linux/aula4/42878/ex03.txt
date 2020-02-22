@@ -1,0 +1,29 @@
+- Qual o nome da sua máquina?: Comando "whoami" --> "sara" y comando "hostnamectl" --> "ubuntu"
+
+- Qual a data e hora do sistema?: Comando "date" --> Fri Feb 14 03:56:11 PST 2020
+
+- Em que caminho está o comando cp?: Comando "which cp" --> /bin/cp
+
+- Tente adaptar os 10 exemplos de usos do comando find para localizar
+arquivos no seu home (https://e-tinet.com/linux/comando-find-linux/):
+
+	1- "find ." --> mostrar una lista de todos los archivos ubicados en un directorio dado, incluidos los archivos almacenados en subdirectorios
+	2- "find ./Python -maxdepth 1" --> El numero indica la profundidad, o la cantidad de veces que entrara al directorio elegido y el "-name "*.txt" --> sirve para reducir la busqueda a solamente los archivos que terminen con .txt  
+	3- "find -name '* .php' -o -name '* .txt'" --> el comando -o es un OR que lo que hace es mostrar los archivos que o terminen con .txt o que terminen con .php
+	4- "find ./aula4 -type f -name "ex*"" --> Lista solamente los archivos que existan dentro de aula4 y "find ./LINUX -type d -name "aula*"" --> Lista solamente los directorios que se encuentran en LINUX.
+	5- "find ~ -type f -name ". *"" --> Lista todos los archivos (en todos los directorios) ocultos y de cualquier tipo.
+	6- "find . -type f -perm 0740" --> Lista todos los archivos que tengan el permiso 740 (ya que el numero es lo que varia, por ejemplo si el numero es 777 mostrara los archivos que tengan todos los permisos para todos: escrbir, leer ejecutar)
+	7- "find . –user sara" --> Lista todos los archivos y directorios creados por el usuario "sara"
+	8- "find /var/www –group amigos" --> Lista todos los archivos que pertenecen a un grupo (en este caso el grupo amigos)
+	9- "find / ~ntime 5" --> Muestra los archivos modificados hace 5 días. Y si la busqueda tiene que ser mas exacta utilizamos: "find / - mtime +30 –mtime -90" que muestra archivos modificados entre 30 y 90 dias.
+	10- "find / -size 40M" --> Lista archivos por tamaño, en este caso archivos de 40 MB  
+
+- Vá pra /home/curso e tente localizar todos os arquivos com extensão .txt em
+todos os subdiretórios usando o comando find (consulte manual): Comando "find -name '*.txt'" --> y me sale "./ex03.txt
+./ex02.txt
+./salida.txt
+./ex01.txt
+./ex04.txt"
+
+- Tente usar o comando find com a opção exec para apagar os arquivos com
+extensão .so abaixo de /home/curso/fulano (você os criou na aula 2): Comando "touch {a..z}.so" --> Este comando crea archivos de la a a la z que tengan extension .so, si queremos luego eliminarlos todos de una usamos: "rm *.so" ya que rm es remove.

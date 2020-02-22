@@ -1,0 +1,15 @@
+a: Primera familia de comandos: 
+- ls --> Lista todos los archivos y directorios en columnas
+- ls -m --> Lista todos los archivos y directorios en lineas
+- ls -l --> Lista todos los archivos y directorios, incluidos permisos de cada uno de ellos, fecha y autor.
+- ls -l -v --> Lista todos los archivos y directorios en orden numerico
+b: Segunda familia de comandos: 
+- ls a* --> Lista todos los archivos que empiezan con la letra "a"
+- ls a*.c --> Lista todos lo archivos que empiezan con "a" y terminan con ".c"
+- ls a??.c --> Lista todos lo archivos que empiezan con "a", terminan con ".c" y solo tienen 2 caracteres entre ambas letras (por ejemplo: ai2.c)
+- ls a????.c --> Lista todos lo archivos que empiezan con "a", terminan con ".c" y solo tienen 4 caracteres entre ambas letras (por ejemplo: aiii6.c)
+- ls ?iii?.c --> Lista todos los archivos que empiezan con cualquier caracter y terminan con ".c", pero al medio tienen "iii" (por ejemplo: tiii6.c)
+- ls *9.c --> Lista todos los archivos que empiezan con cualquier cosa y cuantos caracteres diferentes haya y termina con "9.c" (por ejemplo: fii9.c)
+c: Tercera familia de comandos:
+- ls ai[1-5].c --> Lista todos los archivos que comiencen con "ai" y terminen con los numeros entre 1 y 5
+- ls [a-c]ii1.c --> Lista todos los archivos que comiencen con las letras "a", "b", "c" y terminen con "ii1.c"

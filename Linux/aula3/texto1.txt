@@ -1,0 +1,7 @@
+Comandos para VIM:
+- la letra "i" es para insert
+- "i"esc":q" es para salir
+- "i"esc":wq" es para salir guardando los cambios
+- "i"esc":w" es para guardar
+- "i"esc":Y" es para copiar
+- "i"esc":P" es para pegar

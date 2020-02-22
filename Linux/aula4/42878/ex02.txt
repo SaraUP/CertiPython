@@ -1,0 +1,23 @@
+- Cree un script llamado forever.sh usando o vim: "vim forever.sh"
+
+- Digite o conteúdo abaixo e salve. Muda as permissões do arquivo para concede permissão de EXECUÇÃO para forever.sh: " chmod 700 forever.sh
+./forever.sh" y nos sale: "Starting the Infinite Process"
+
+- Rode o script com: " ./forever.sh"
+
+- Coloque o script em background: "./forever.sh
+Starting the Infinite Process
+Inside the loop that will go forever
+^Z
+[1]+  Stopped                 ./forever.sh
+sara@ubuntu:~/Documents/Python/LINUX/LINUX/aula4$ bg"
+
+- Tente achá-lo com ps: "86734 pts/0    00:00:00 forever.sh"
+
+ -Mate-o com kill: "kill 86734
+[1]+  Terminated              ./forever.sh"
+
+ -Rode-o novamente com nohup e um & (e commercial) no final da linha. Feche o terminal e abra novamente. O processo forever.sh continua rodando?: "nohup forever.sh &
+[1] 86784"
+y si ponemos "ps -e" nos sale: " 86784 pts/0    00:00:00 forever.sh"
+Vemos que al final, al volver a abrir la terminal, el programa se sigue ejecutando.

@@ -1,0 +1,3 @@
+alias uno='ls>>archivo.txt'
+alias dos='sort<archivo.txt'
+alias tres='sort<archivo.txt>>resultado.txt'
